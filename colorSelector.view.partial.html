@@ -1,0 +1,12 @@
+<div>
+  <ul class="colorSelector">
+    <li>
+      <div ng-click="ctrl.showSelector = ! ctrl.showSelector;" style=" background-color: {{ctrl.colorSelected.hex}};"></div>
+    </li>
+  </ul>
+  <ul class="colorSelector" ng-show="ctrl.showSelector">
+    <li ng-repeat=" colorOption in ctrl.colorOptions">
+      <div ng-click="ctrl.colorSelected = colorOption; ctrl.showSelector = ! ctrl.showSelector" style=" background-color: {{colorOption.hex}};"></div>
+    </li>
+  </ul>
+</div>

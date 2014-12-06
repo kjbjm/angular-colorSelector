@@ -1,0 +1,27 @@
+ul.colorSelector {
+    display: inline-block;
+    border: 1px solid #999999;
+    background-color: #efefef;
+    box-shadow: 2px 2px 2px #888888;
+    padding: 3px;
+    padding-bottom: 0px;
+}
+
+ul.colorSelector > li {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    float: left;
+}
+
+ul.colorSelector > li > div {
+    display: inline-block;
+    min-height: 20px;
+    min-width: 20px;
+    border: 1px solid #999999;
+}
+
+ul.colorSelector > li > div:hover {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #999999;
+}
