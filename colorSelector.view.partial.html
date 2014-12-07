@@ -1,4 +1,9 @@
 <div>
+
+  <!-- you might want to remove this part in production code -->
+  <h2 style="background-color: {{ctrl.colorSelected.hex}}">You selected: {{ctrl.colorSelected.name}}!</h2>
+  <!-- end of section to be removed-->
+  
   <ul class="colorSelector">
     <li>
       <div ng-click="ctrl.showSelector = ! ctrl.showSelector;" style=" background-color: {{ctrl.colorSelected.hex}};"></div>
